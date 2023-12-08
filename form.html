@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js"></script>
+
+    <!-- Adicione estas linhas no head do seu HTML -->
+    <!-- Biblioteca de máscaras de entrada mais fácil -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-masker/1.1.0/vanilla-masker.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="fundo-nav">
+            <a href="home.html" class="a-fundo-nav">
+                <img src="Img/logoterrasaudade.svg" alt="Logotipo do grupo escotismo terra da saudade"
+                    class="fundo-nav-img">
+            </a>
+            <h1 class="h1-header">
+                Grupo Escoteiro Terra Da Saudade - 05/SP
+            </h1>
+            <span class="material-icons" id="burguer">menu</span>
+        </div>
+        <nav id="nav" class="navbar">
+            <ul id="menu">
+                <li class="list-a">
+                    <a href="index.html" class="a-nav">
+                        <button class="button-nav">Home</button>
+                    </a>
+                </li>
+                <li class="list-a">
+                    <a href="ramos.html" class="a-nav">
+                        <button class="button-nav">Ramos</button>
+                    </a>
+                </li>
+                <li class="list-a">
+                    <a href="#" class="a-nav">
+                        <button class="button-nav" style="background-color: white;
+                                                            color: #384F3B;">Cadastro</button>
+                    </a>
+                </li>
+                <li class="list-a">
+                    <a href="gallery.html" class="a-nav">
+                        <button class="button-nav">Galeria</button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div class="box">
+            <form action="#" method="post" id="form" alt="Formulário de Cadastro">
+                <fieldset>
+                    <legend alt="Legenda"><span style="font-weight: bold;">Formulário de Cadastro</span></legend>
+                    <br>
+                    <div class="inputBox">
+                        <input type="text" name="nome" id="nome" class="inputUser" alt="Nome" required>
+                        <label for="nome" class="labelInput">Nome Completo:</label>
+                    </div>
+                    <br><br>
+
+                    <div class="inputBox">
+                        <input type="text" name="cpf" id="cpf" class="inputUser" alt="CPF" required>
+                        <label for="cpf" class="labelInput">CPF:</label>
+                    </div>
+                    <br><br>
+
+                    <label for="data_nascimento"><strong>Data de Nascimento:</strong></label>
+                    <input type="date" name="data_nascimento" id="data_nascimento" alt="Data de nascimento" required
+                        style="color: black;
+                               padding: 2.5%;">
+                    <br><br><br>
+
+                    <div class="inputBox">
+                        <input type="text" name="cidade" id="cidade" class="inputUser" required alt="Cidade">
+                        <label for="cidade" class="labelInput">Cidade:</label>
+                    </div>
+                    <br><br>
+
+                    <div class="inputBox">
+                        <input type="text" name="endereco" id="endereco" class="inputUser" required alt="Endereço">
+                        <label for="endereco" class="labelInput">Endereço:</label>
+                    </div>
+                    <br><br>
+
+                    <div class="inputBox">
+                        <input type="text" name="bairro" id="bairro" class="inputUser" required alt="Bairro">
+                        <label for="bairro" class="labelInput">Bairro:</label>
+                    </div>
+                    <br><br>
+
+                    <div class="inputBox">
+                        <input type="text" name="nomemae" id="mae" class="inputUser" alt="Nome da mãe" required>
+                        <label for="mae" class="labelInput">Nome da Mãe:</label>
+                    </div>
+                    <br><br>
+
+                    <div class="inputBox">
+                        <input type="tel" name="telefonemae" id="tel" class="inputUser" alt="Telefone da mãe" required>
+                        <label for="telmae" class="labelInput">Telefone Mãe:</label>
+                    </div>
+                    <br><br>
+
+                    <div class="inputBox">
+                        <input type="text" name="nomepai" id="pai" class="inputUser" alt="Nome do pai" required>
+                        <label for="pai" class="labelInput">Nome do Pai:</label>
+                    </div>
+                    <br><br>
+
+                    <div class="inputBox">
+                        <input type="tel" name="telefonepai" id="telpai" class="inputUser" alt="Telefone do pai"
+                            required>
+                        <label for="telpai" class="labelInput">Telefone Pai:</label>
+                    </div>
+                    <br><br>
+
+                    <div class="inputBox">
+                        <input type="text" name="emailpai" id="emailpai" class="inputUser" alt="E-mail do responsável"
+                            required>
+                        <label for="emailpai" class="labelInput">E-mail do Responsável:</label>
+                    </div>
+                    <br><br>
+
+                    <p class="genero">Gênero:</p>
+                    <input type="radio" name="genero" id="masculino" class="radio" value="Masculino" required>
+                    <label for="masculino">Masculino</label><br>
+                    <input type="radio" name="genero" id="feminino" class="radio" value="Feminino" required>
+                    <label for="feminino">Feminino</label>
+                    <br><br>
+
+                    <div>
+                        <input type="submit" name="enviar" id="enviar" value="Enviar" style="color: white;
+                                                                                            font-weight: bold;">
+                    </div>
+                    <br>
+
+                </fieldset>
+            </form>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-contacts">
+                <h1><img src="Img/logoassociacaosab.svg" width="30%" height="100vh" class="footer-logo"></h1>
+                <p class="p-msg">Se tiver o hábito de fazer as coisas com alegria, raramente encontrará situações difíceis.</p>
+
+                <div class="footer-social">
+                    <a href="https://instagram.com/grupoescoteiroterradasaudade?igshid=YTQwZjQ0Nml0OA==" target="_blank"
+                        class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/escoteirosmatao" target="_blank" class="footer-link"
+                        id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://api.whatsapp.com/send?phone=%2B5516991385661&data=ARAS4x0OdBvanOLmwpq6EgbrzRhqqGzQavOL0LJAHmqkGe4Y2HW0jerhFAI69cjU1AcYYdUi0gxhIzbT5elFJEe3IhkcmeFv5R4fAOUk5e-n-0iwKVs9sD4NlsChPH1pDzwSUw9qrzFJcJD66C-DsmzQ-w&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR1JWOTuaIobAOSxqwj705nb6VK2li9ahZ0RdW1hkecmsJSTrF7yTIwmgdA"
+                        target="_blank" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/@GrupoEscoteiroTerradaSaudade" target="_blank" class="footer-link"
+                    id="youtube" alt="Logo YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h2 class="h2-sobre">Sobre nós</h2>
+                </li>
+
+                <li>
+                    <p class="p-sobre">Somos um grupo da faculdade que estamos trabalhando em um projeto integrador com o tema "Inclusão
+                        Social". Nosso objetivo é criarmos um site sobre o escotismo para o Grupo Escoteiro Terra da
+                        Saudade.</p>
+                </li>
+            </ul>
+
+            <div class="footer-subscribe">
+                <h2 class="h2-cadastro">Cadastre-se</h2>
+                <p class="p-cadastro">
+                    Se quiser receber atualizações do Grupo Escoteiro Terra da Saudade, informe-nos seu e-mail dentro do
+                    campo abaixo.
+                </p>
+
+                <div class="input-group">
+                    <input type="email" id="email" name="email" alt="E-mail">
+                    <button class="inf">
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-direitos">
+            &#169 todos os direitos autorais reservados
+        </div>
+    </footer>
+    <script>
+        const burguerMenu = document.getElementById('burguer');
+burguerMenu.addEventListener('click', toggleMenu);
+
+function toggleMenu() {
+  const nav = document.getElementById('nav');
+  nav.classList.toggle('active');
+}
+    </script>
+</body>
+
+</html>
