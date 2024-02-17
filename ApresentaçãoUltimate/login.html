@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo Escoteiro Terra da Saudade</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="./Img/logoterrasaudade.svg" type="image/x-icon">
+
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Biblioteca de máscaras -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-masker/1.1.0/vanilla-masker.min.js"></script>
+    
+</head>
+<body>
+    <main>
+        <div class="wallpaper">
+            <div class="box">
+                <div class="header-login">
+                    <h1>Login</h1>
+                </div>
+                <form action="#" get="post">
+                    <div class="input-box">
+                        <input type="text" name="email" id="email" class="input-field" required>
+                        <label for="email" class="label">E-mail</label>
+                        <i class="bx bx-envelope icon" id="show-email"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" name="senha" id="senha" class="input-field" required autocomplete="off">
+                        <label for="senha" class="label">Senha</label>
+                        <i class="bx bx-lock-alt icon" id="show-password"></i>
+                    </div>
+                    <div class="remember-forgot">
+                        <div class="remember-me">
+                            <input type="checkbox" name="lembrarSenha" id="remember">
+                            <label for="remember">Lembrar de mim</label>
+                        </div>
+                        <div class="forgot">
+                            <a href="#">Esqueceu a senha?</a>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <input type="submit" class="input-submit" value="Login">
+                    </div>
+                    <div class="register">
+                        <span>Não tenho conta?<a href="card.html">Cadastre-se</a></span> 
+                    </div>
+                    <div class="register">
+                        <span><a href="index.html" class="home">Voltar ao início</a></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/login.js"></script>
+</body>
+</html>

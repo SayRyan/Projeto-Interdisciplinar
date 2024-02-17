@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Img/logoterrasaudade.svg" type="image/x-icon">
+    <link rel="stylesheet" href="escoteiro.css">
+
+    <!-- Biblioteca de máscaras -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-masker/1.1.0/vanilla-masker.min.js"></script>
+    <title>Grupo Escoteiro Terra da Saudade</title>
+</head>
+<body>
+    <main>
+        <div class="wallpaper">
+            <div class="box">
+                <div class="h1-header">
+                    <h1>Escoteiro</h1>
+                </div>
+                <form action="#" get="post">
+                    <div class="input-box">
+                        <input type="text" name="nome" id="nome" class="input-field" placeholder="Digite seu nome completo" required>
+                        <label for="nome" class="label">Nome Completo</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="cpf" id="cpf" class="input-field" placeholder="000.000.000-00" required autocomplete="off">
+                        <label for="cpf" class="label">CPF</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="data-nascimento" id="data" class="input-field" placeholder="00/00/0000" required autocomplete="off">
+                        <label for="data" class="label">Data de nascimento</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="cidade" id="cidade" class="input-field" placeholder="Digite o nome da sua cidade" required autocomplete="off">
+                        <label for="cidade" class="label">Cidade</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="endereço" id="endereco" class="input-field" placeholder="Digite o nome do seu endereço" required autocomplete="off">
+                        <label for="endereco" class="label">Endereço</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="bairro" id="bairro" class="input-field" placeholder="Digite o nome do seu bairro" required autocomplete="off">
+                        <label for="bairro" class="label">Bairro</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="nome-mae" id="nomemae" class="input-field" placeholder="Nome completo da mãe" required autocomplete="off">
+                        <label for="nomemae" class="label">Nome completo da mãe</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="tel" name="telefone-mae" id="telmae" class="input-field" placeholder="(00) 00000-0000" required autocomplete="off">
+                        <label for="telmae" class="label">Telefone da mãe</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="nome-pai" id="nomepai" class="input-field" placeholder="Nome completo do pai" required autocomplete="off">
+                        <label for="nomepai" class="label">Nome completo do pai</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="tel" name="telefone-pai" id="telpai" class="input-field" placeholder="(00) 00000-0000" required autocomplete="off">
+                        <label for="telpai" class="label">Telefone do pai</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="email" id="email" class="input-field" placeholder="E-mail do responsável" required autocomplete="off">
+                        <label for="email" class="label">E-mail do responsável</label>
+                    </div>
+                    <div class="input-genero">
+                        <span>Selecione o gênero:</span><br>
+                    </div>
+                    <div class="input-radio">
+                        <input type="radio" name="genero" id="masculino" class="radio" required>
+                        <label for="masculino">Masculino</label>
+                        <span class="espaco"></span>
+                        <input type="radio" name="genero" id="feminino" class="radio" required>
+                        <label for="feminino">Feminino</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="submit" class="input-submit" value="Cadastrar">
+                    </div>
+                    <div class="home">
+                        <span><a href="index.html" class="home">Voltar ao início</a></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/escoteiro.js"></script>
+</body>
+</html>
