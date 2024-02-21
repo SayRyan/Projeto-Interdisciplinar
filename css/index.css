@@ -32,9 +32,14 @@ body {
     background: linear-gradient(to top, #384f3b, #258d32);
 }
 
-.fa-user::before {
-    font-size: 25px;
-    
+.fa-user {
+    font-size: 22px;
+    padding: 0px 0px 0px 14px;
+}
+
+.fa-user:hover {
+    opacity: 0.8;
+    transition: all 0.6;
 }
 
 #menu {
@@ -50,7 +55,7 @@ body {
     color: white;
     text-align: center;
     cursor: pointer;
-    margin: 25px;
+    margin: 15px;
 }
 
 #burguer:hover {
@@ -232,10 +237,18 @@ footer {
     color: var(--color-neutral-10);
 }
 
+.logo-asso {
+    display: flex;
+    justify-content: center;
+}
+
 .footer-logo {
-    width: 100%;
-    height: 30vh;
-    margin-bottom: 15%;
+    width: 200px;
+    height: 25vh;
+    padding: 3%;
+    margin: 5px 0px 35px 0px;
+    background-color: var(--color-neutral-10);
+    border-radius: 50%;
 }
 
 .footer-link {
@@ -571,11 +584,15 @@ h2 {
     .logo-asso {
         display: flex;
         justify-content: center;
-        align-items: center;
     }
-
+    
     .footer-logo {
-        margin: 5% 0% 10% 0%;
+        width: 200px;
+        height: 25vh;
+        padding: 3%;
+        margin: 5px 0px 35px 0px;
+        background-color: var(--color-neutral-10);
+        border-radius: 50%;
     }
 
     .footer-social {
@@ -598,7 +615,7 @@ h2 {
     }
 
     .footer-social .footer-link i {
-        font-size: 1.15rem;
+        font-size: 1.40rem;
     }
 
     .footer-social .footer-link:hover {
@@ -722,10 +739,10 @@ h2 {
     }
     .h1-header {
         margin-right: 5%;
-        margin-top: 5%;
+        margin-top: 0%;
         width: 90%;
         text-align: center;
-        font-size: 28px;
+        font-size: 26px;
     }
 
 
@@ -736,11 +753,8 @@ h2 {
 
     .h1-texto-info-gp {
         text-align: center;
+        margin-left: 10px;
         font-size: 2em;
-        font-weight: bold;
-        margin-top: 10%;
-        margin-bottom: 5%;
-        color: #378241;
     }
 
     .texto-info-gp {
@@ -748,7 +762,7 @@ h2 {
         font-weight: bold;
         font-size: 1.2rem;
         margin: 0px 10%;
-        margin-bottom: 20%;
+        margin-bottom: 40px;
         color: #384F3B;
     }
 
@@ -762,12 +776,6 @@ h2 {
 
     .cards-texto-info {
         display: none;
-    }
-
-    .cards-eventos {
-        display: flex;
-        margin: 0%;
-        background-color: unset;
     }
 
     .cards-cd1 {
@@ -793,9 +801,8 @@ h2 {
     
     .input-group input {
         all: unset;
-        padding: 0.75rem;
-        width: 150px;
-        margin-left: 0%;
+        padding: 0.50rem;
+        width: 200px;
     }
     
     #email {
@@ -810,7 +817,7 @@ h2 {
         border: 3px solid var(--color-neutral-10);
         color: var(--color-neutral-10);
         padding: 0% 1.5rem;
-        font-size: 1.125rem;
+        font-size: 1.550rem;
         height: 100%;
         border-radius: 0px 4px 4px 0px;
         cursor: pointer;
@@ -830,8 +837,12 @@ h2 {
     .footer-content {
         background-color: var(--color-neutral-0);
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         padding: 3rem 2rem;
+    }
+
+    .footer-content {
+        display: grid;
     }
     
     .footer-contacts h1{
@@ -844,17 +855,14 @@ h2 {
         margin-left: -10%;
     }
     
+    .logo-asso {
+        display: flex;
+        justify-content: center;
+    }
+    
     .footer-logo {
-        background-color: var(--color-neutral-10);
-        border-radius: 50%;
-        padding: 0rem;
-        padding-left: 0%;
-        padding-right: 0%;
-        margin-left: 0%;
-        margin-top: -5%;
-        margin-bottom: -4%;
-        width: 48%;
-        height: 21vh;
+        width: 200px;
+        height: 25vh;
     }
     
     .footer-social {
@@ -866,9 +874,7 @@ h2 {
     .footer-social .footer-link {
         display: flex;
         justify-content: center;
-        margin-left: 0%;
         margin-top: 2%;
-        margin-right: 0%;
         align-items: center;
         justify-content: center;
         height: 2rem;
@@ -878,7 +884,7 @@ h2 {
     }
     
     .footer-social .footer-link i {
-        font-size: 1.15rem;
+        font-size: 1.40rem;
     }
     
     .footer-social .footer-link:hover {
@@ -897,43 +903,34 @@ h2 {
     .p-msg {
         display: flex;
         justify-content: center;
-        font-size: 14px;
+        font-size: 18px;
         text-align: justify;
-        margin-left: 0%;
-        margin-right: 0%;
     }
     
     .h2-sobre {
         display: flex;
         justify-content: center;
-        margin-top: 0%;
-        font-size: medium;
-        margin-left: 0%;
+        font-size: 20px;
     }
     
     .p-sobre {
         display: flex;
         justify-content: center;
-        font-size: 14px;
+        font-size: 18px;
         text-align: justify;
-        margin-right: 0%;
-        margin-left: 0%;
-        padding-bottom: 30px;
     }
     
     .h2-cadastro {
         display: flex;
         justify-content: center;
-        font-size: medium;
-        margin-left: 0%;
+        font-size: 20px;
     }
     
     .p-cadastro {
         display: flex;
         justify-content: center;
-        font-size: 14px;
+        font-size: 18px;
         text-align: justify;
-        margin-left: 0%;
     }
     
     h2 {
@@ -963,7 +960,7 @@ h2 {
         display: flex;
         justify-content: center;
         background-color: var(--color-neutral-30);
-        font-size: 1rem;
+        font-size: 1.3rem;
         padding: 1.5rem;
         font-weight: 400;
     }
@@ -987,6 +984,12 @@ h2 {
         color: white;
         text-align: center;
     }
+
+    .fa-user {
+        padding: 0px 40px 0px 0px;
+        font-size: 36px;
+    }
+
     #menu {
         display: inline;
         position: absolute;
@@ -1036,9 +1039,7 @@ h2 {
     .h1-header {
         width: 80%;
         text-align: center;
-        font-size: 36px;
-        margin: 5%;
-        margin-right: 10%;
+        font-size: 30px;
     }
 
     button {
@@ -1082,9 +1083,6 @@ h2 {
 
     .texto-info-gp {
         text-align: justify;
-        font-weight: bold;
-        font-size: 1.4rem;
-        margin: 0px 10%;
         margin-bottom: 15%;
         color: #2f4232;
     }
@@ -1112,7 +1110,7 @@ h2 {
 
     .cards-cd1 {
         display: flex;
-        width: 420px;
+        width: 300px;
         height: auto;
         margin-bottom: 5%;
         text-align: center;
@@ -1136,9 +1134,8 @@ h2 {
     
     .input-group input {
         all: unset;
-        padding: 0.75rem;
-        width: 150px;
-        margin-left: 0%;
+        padding: 0.50rem;
+        width: 200px;
     }
     
     #email {
@@ -1153,7 +1150,7 @@ h2 {
         border: 3px solid var(--color-neutral-10);
         color: var(--color-neutral-10);
         padding: 0% 1.5rem;
-        font-size: 1.125rem;
+        font-size: 1.550rem;
         height: 100%;
         border-radius: 0px 4px 4px 0px;
         cursor: pointer;
@@ -1174,7 +1171,11 @@ h2 {
         background-color: var(--color-neutral-0);
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        padding: 3rem 2rem;
+        padding: 3rem 1.2rem;
+    }
+
+    .footer-content {
+        display: grid;
     }
     
     .footer-contacts h1{
@@ -1184,18 +1185,16 @@ h2 {
     h1 {
         display: flex;
         justify-content: center;
+        margin-left: -10%;
+    }
+    
+    .logo-asso {
+        display: flex;
+        justify-content: center;
     }
     
     .footer-logo {
-        background-color: var(--color-neutral-10);
-        border-radius: 50%;
-        padding: 0rem;
-        padding-left: 0%;
-        padding-right: 0%;
-        margin-left: 0%;
-        margin-top: -5%;
-        margin-bottom: -4%;
-        width: 50%;
+        width: 200px;
         height: 25vh;
     }
     
@@ -1208,9 +1207,7 @@ h2 {
     .footer-social .footer-link {
         display: flex;
         justify-content: center;
-        margin-left: 0%;
         margin-top: 2%;
-        margin-right: 0%;
         align-items: center;
         justify-content: center;
         height: 2rem;
@@ -1219,9 +1216,8 @@ h2 {
         border-radius: 50%;
     }
     
-    
     .footer-social .footer-link i {
-        font-size: 1.15rem;
+        font-size: 1.40rem;
     }
     
     .footer-social .footer-link:hover {
@@ -1234,53 +1230,45 @@ h2 {
         flex-direction: column;
         gap: 0.75rem;
         list-style: none;
-        padding: 0%;
+        padding: 10px;
+        margin-bottom: 150px;
     }
     
     .p-msg {
         display: flex;
         justify-content: center;
-        font-size: 16px;
+        font-size: 18px;
         text-align: justify;
-        margin-left: 0%;
-        margin-right: 0%;
     }
     
     .h2-sobre {
         display: flex;
         justify-content: center;
-        margin-top: 5%;
-        font-size: large;
-        margin-left: 0%;
+        font-size: 20px;
     }
     
     .p-sobre {
         display: flex;
         justify-content: center;
-        font-size: 16px;
+        font-size: 18px;
         text-align: justify;
-        margin-right: 0%;
-        margin-left: 0%;
-        padding-bottom: 30px;
     }
     
     .h2-cadastro {
         display: flex;
         justify-content: center;
-        font-size: large;
-        margin-left: 0%;
+        font-size: 20px;
     }
     
     .p-cadastro {
         display: flex;
         justify-content: center;
-        font-size: 16px;
+        font-size: 18px;
         text-align: justify;
-        margin-left: 0%;
     }
     
     h2 {
-        text-align: left;
+        text-align: center;
     }
     
     .footer-list {
@@ -1306,7 +1294,7 @@ h2 {
         display: flex;
         justify-content: center;
         background-color: var(--color-neutral-30);
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         padding: 1.5rem;
         font-weight: 400;
     }
@@ -1411,7 +1399,7 @@ h2 {
     /* ----------- Main ------------- */
 
     .carrosel-img-wh {
-        height: 80vh;
+        height: 90vh;
     }
 
     .h1-texto-info-gp {
@@ -1455,7 +1443,7 @@ h2 {
 
     .cards-cd1 {
         display: flex;
-        width: 420px;
+        width: 390px;
         height: auto;
         margin-bottom: 5%;
         text-align: center;
@@ -1470,7 +1458,7 @@ h2 {
     
     .input-group {
         display: flex;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
         background-color: var(--color-neutral-0);
         border-radius: 4px;
@@ -1478,9 +1466,8 @@ h2 {
     
     .input-group input {
         all: unset;
-        padding: 0.75rem;
-        width: 150px;
-        margin-left: 0%;
+        padding: 0.50rem;
+        width: 200px;
     }
     
     #email {
@@ -1495,7 +1482,7 @@ h2 {
         border: 3px solid var(--color-neutral-10);
         color: var(--color-neutral-10);
         padding: 0% 1.5rem;
-        font-size: 1.125rem;
+        font-size: 1.550rem;
         height: 100%;
         border-radius: 0px 4px 4px 0px;
         cursor: pointer;
@@ -1503,7 +1490,7 @@ h2 {
     
     footer {
         box-sizing: border-box;
-        letter-spacing: 1px;
+        letter-spacing: 0px;
         width: 100%;
         color: var(--color-neutral-10);
     }
@@ -1516,48 +1503,45 @@ h2 {
         background-color: var(--color-neutral-0);
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        padding: 3rem 2rem;
+        padding: 3rem 1.2rem;
     }
     
-    .footer-contacts h1{
-        margin-bottom: 2.6rem;
+    h1 {
+        display: flex;
+        justify-content: center;
+        margin-left: -10%;
+    }
+    
+    .logo-asso {
+        display: flex;
+        justify-content: center;
     }
     
     .footer-logo {
-        background-color: var(--color-neutral-10);
-        border-radius: 50%;
-        padding: 0rem;
-        padding-left: 0%;
-        padding-right: 0%;
-        margin-left: 1%;
-        margin-top: -5%;
-        margin-bottom: -4%;
-        width: 50%;
+        width: 200px;
         height: 25vh;
     }
     
     .footer-social {
         display: flex;
-        justify-content: center;
-        gap: .5rem;
+        gap: .8rem;
         margin-top: 1.3rem;
     }
     
     .footer-social .footer-link {
         display: flex;
-        margin-left: 0%;
+        justify-content: center;
         margin-top: 2%;
-        margin-right: 0%;
         align-items: center;
         justify-content: center;
-        height: 2.5rem;
-        width: 2.5rem;
+        height: 2rem;
+        width: 2rem;
         color: var(--color-neutral-10);
         border-radius: 50%;
     }
     
     .footer-social .footer-link i {
-        font-size: 1.15rem;
+        font-size: 1.50rem;
     }
     
     .footer-social .footer-link:hover {
@@ -1567,58 +1551,55 @@ h2 {
     
     .footer-list {
         display: flex;
-        flex-direction: column;
-        gap: 0.75rem;
+        justify-content: center;
+        align-items: center;
         list-style: none;
-        padding: 0%;
+        padding: 30px;
+    }
+
+    .footer-subscribe {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 143px;
+        gap: 12px;
     }
     
     .p-msg {
         display: flex;
         justify-content: center;
-        font-size: 16px;
+        font-size: 18px;
         text-align: justify;
-        margin-left: 0%;
-        margin-right: 0%;
     }
     
     .h2-sobre {
         display: flex;
         justify-content: center;
-        margin-top: 0%;
-        font-size: large;
-        margin-left: 0%;
+        font-size: 20px;
     }
     
     .p-sobre {
         display: flex;
         justify-content: center;
-        font-size: 16px;
+        font-size: 18px;
         text-align: justify;
-        margin-right: 0%;
-        margin-left: 0%;
-        padding-bottom: 30px;
     }
     
     .h2-cadastro {
         display: flex;
         justify-content: center;
-        font-size: large;
-        margin-left: 10%;
-        margin-top: 0%;
-        margin-bottom: -2.5%;
+        font-size: 20px;
     }
     
     .p-cadastro {
         display: flex;
         justify-content: center;
-        font-size: 16px;
+        font-size: 18px;
         text-align: justify;
-        margin-left: 15%;
     }
     
     h2 {
-        text-align: left;
+        text-align: center;
     }
     
     .footer-list {
@@ -1630,12 +1611,6 @@ h2 {
         transition: all 0.4s;
     }
     
-    .footer-subscribe {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-    
     .footer-subscribe p {
         color: var(--color-neutral-10);
     }
@@ -1644,7 +1619,7 @@ h2 {
         display: flex;
         justify-content: center;
         background-color: var(--color-neutral-30);
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         padding: 1.5rem;
         font-weight: 400;
     }
@@ -1748,7 +1723,7 @@ h2 {
     /* ------------ Main ---------------- */
 
     .carrosel-img-wh {
-        height: 80vh;
+        height: 90vh;
     }
 
     .h1-texto-info-gp {
@@ -1792,7 +1767,8 @@ h2 {
 
     .cards-cd1 {
         display: flex;
-        width: 420px;
+        justify-content: space-around;
+        width: 450px;
         height: auto;
         margin-bottom: 5%;
         text-align: center;
@@ -1807,7 +1783,7 @@ h2 {
     
     .input-group {
         display: flex;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
         background-color: var(--color-neutral-0);
         border-radius: 4px;
@@ -1815,9 +1791,8 @@ h2 {
     
     .input-group input {
         all: unset;
-        padding: 0.75rem;
-        width: 150px;
-        margin-left: 0%;
+        padding: 0.50rem;
+        width: 200px;
     }
     
     #email {
@@ -1832,7 +1807,7 @@ h2 {
         border: 3px solid var(--color-neutral-10);
         color: var(--color-neutral-10);
         padding: 0% 1.5rem;
-        font-size: 1.125rem;
+        font-size: 1.550rem;
         height: 100%;
         border-radius: 0px 4px 4px 0px;
         cursor: pointer;
@@ -1840,7 +1815,7 @@ h2 {
     
     footer {
         box-sizing: border-box;
-        letter-spacing: 1px;
+        letter-spacing: 0px;
         width: 100%;
         color: var(--color-neutral-10);
     }
@@ -1853,49 +1828,45 @@ h2 {
         background-color: var(--color-neutral-0);
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        padding: 3rem 2rem;
+        padding: 3rem 1.2rem;
     }
     
-    .footer-contacts h1{
-        margin-bottom: 2.6rem;
+    h1 {
+        display: flex;
+        justify-content: center;
+        margin-left: -10%;
+    }
+    
+    .logo-asso {
+        display: flex;
+        justify-content: center;
     }
     
     .footer-logo {
-        background-color: var(--color-neutral-10);
-        border-radius: 50%;
-        padding: 0rem;
-        padding-left: 0%;
-        padding-right: 0%;
-        display: flex;
-        justify-content: center;
-        margin-left: 0%;
-        margin-top: -5%;
-        margin-bottom: -4%;
-        width: 50%;
+        width: 200px;
         height: 25vh;
     }
     
     .footer-social {
         display: flex;
-        gap: .1rem;
+        gap: .8rem;
         margin-top: 1.3rem;
     }
     
     .footer-social .footer-link {
         display: flex;
-        margin-left: -3%;
+        justify-content: center;
         margin-top: 2%;
-        margin-right: 7%;
         align-items: center;
         justify-content: center;
-        height: 2.5rem;
-        width: 2.5rem;
+        height: 2rem;
+        width: 2rem;
         color: var(--color-neutral-10);
         border-radius: 50%;
     }
     
     .footer-social .footer-link i {
-        font-size: 1.15rem;
+        font-size: 1.50rem;
     }
     
     .footer-social .footer-link:hover {
@@ -1905,58 +1876,55 @@ h2 {
     
     .footer-list {
         display: flex;
-        flex-direction: column;
-        gap: 0.75rem;
+        justify-content: center;
+        align-items: center;
         list-style: none;
-        padding: 0%;
+        padding: 30px;
+    }
+
+    .footer-subscribe {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 143px;
+        gap: 12px;
     }
     
     .p-msg {
         display: flex;
         justify-content: center;
-        font-size: 16px;
+        font-size: 18px;
         text-align: justify;
-        margin-left: 0%;
-        margin-right: 0%;
     }
     
     .h2-sobre {
         display: flex;
         justify-content: center;
-        margin-top: 0%;
-        font-size: large;
-        margin-left: 0%;
+        font-size: 20px;
     }
     
     .p-sobre {
         display: flex;
         justify-content: center;
-        font-size: 16px;
+        font-size: 18px;
         text-align: justify;
-        margin-right: 0%;
-        margin-left: 0%;
-        padding-bottom: 30px;
     }
     
     .h2-cadastro {
         display: flex;
         justify-content: center;
-        font-size: large;
-        margin-left: 0%;
-        margin-top: 0%;
-        margin-bottom: -2%;
+        font-size: 20px;
     }
     
     .p-cadastro {
         display: flex;
         justify-content: center;
-        font-size: 16px;
+        font-size: 18px;
         text-align: justify;
-        margin-left: 5%;
     }
     
     h2 {
-        text-align: left;
+        text-align: center;
     }
     
     .footer-list {
@@ -1968,12 +1936,6 @@ h2 {
         transition: all 0.4s;
     }
     
-    .footer-subscribe {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-    
     .footer-subscribe p {
         color: var(--color-neutral-10);
     }
@@ -1982,7 +1944,7 @@ h2 {
         display: flex;
         justify-content: center;
         background-color: var(--color-neutral-30);
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         padding: 1.5rem;
         font-weight: 400;
     }

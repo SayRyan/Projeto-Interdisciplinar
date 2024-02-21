@@ -13,8 +13,8 @@
     --green-color-second: #378241;
 }
 
-body {
-    background-image: url("./Img/master.00_11_33_07.Quadro027.jpg");
+body {  
+    background-image: url("./imagens/master.00_11_33_07.Quadro027.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

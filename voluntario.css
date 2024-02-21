@@ -14,7 +14,7 @@
 }
 
 body {
-    background-image: url("./Img/master.00_11_33_07.Quadro027.jpg");
+    background-image: url("./imagens/master.00_11_33_07.Quadro027.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -76,8 +76,8 @@ body {
     outline: none;
 }
 
-#nome, #cpf, #data, #cidade,
-#endereco, #bairro, #nomemae, #telmae, #nomepai, #telpai {
+#nome, #cpf, #rg, #data, #cidade,
+#rua, #estado ,#bairro, #tel, #cep {
     margin-bottom: 20px;
 }
 

@@ -27,20 +27,32 @@
                         <label for="cpf" class="label">CPF</label>
                     </div>
                     <div class="input-box">
+                        <input type="text" name="rg" id="rg" class="input-field" placeholder="00.000.000-0" required autocomplete="off">
+                        <label for="rg" class="label">RG</label>
+                    </div>
+                    <div class="input-box">
                         <input type="text" name="data-nascimento" id="data" class="input-field" placeholder="00/00/0000" required autocomplete="off">
                         <label for="data" class="label">Data de nascimento</label>
                     </div>
                     <div class="input-box">
-                        <input type="text" name="cidade" id="cidade" class="input-field" placeholder="Digite o nome da sua cidade" required autocomplete="off">
+                        <input type="text" name="cep" id="cep" class="input-field" placeholder="00000-000" required onblur="pesquisacep(this.value);">
+                        <label for="cep" class="label">CEP</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="rua" id="rua" class="input-field" placeholder="Digite o nome da sua rua" required>
+                        <label for="rua" class="label">Rua</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="bairro" id="bairro" class="input-field" placeholder="Digite o nome do seu bairro" required>
+                        <label for="bairro" class="label">Bairro</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="cidade" id="cidade" class="input-field" placeholder="Digite o nome da sua cidade" required>
                         <label for="cidade" class="label">Cidade</label>
                     </div>
                     <div class="input-box">
-                        <input type="text" name="endereço" id="endereco" class="input-field" placeholder="Digite o nome do seu endereço" required autocomplete="off">
-                        <label for="endereco" class="label">Endereço</label>
-                    </div>
-                    <div class="input-box">
-                        <input type="text" name="bairro" id="bairro" class="input-field" placeholder="Digite o nome do seu bairro" required autocomplete="off">
-                        <label for="bairro" class="label">Bairro</label>
+                        <input type="text" name="estado" id="estado" class="input-field" placeholder="Digite seu estado" required>
+                        <label for="estado" class="label">Estado</label>
                     </div>
                     <div class="input-box">
                         <input type="text" name="nome-mae" id="nomemae" class="input-field" placeholder="Nome completo da mãe" required autocomplete="off">

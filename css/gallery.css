@@ -9,10 +9,11 @@
 
 .fundo-nav {
   display: flex;
-  margin: 0%;
+  align-items: center;
+  justify-content: space-around;
   background: linear-gradient(#384f3b, #258d32);
   color: white;
-  text-align: center;
+  width: 100%;
 }
 
 .navbar {
@@ -23,12 +24,22 @@
   background: linear-gradient(to top, #384f3b, #258d32);
 }
 
+.fa-user {
+  font-size: 22px;
+  padding: 0px 0px 0px 14px;
+}
+
+.fa-user:hover {
+  opacity: 0.8;
+  transition: all 0.6;
+}
+
 #menu {
   display: none;
   position: absolute;
   right: 0;
   background: linear-gradient(to top, #384F3B, #258d32);
-  width: 45%;
+  width: 30%;
   z-index: 5;
 }
 
@@ -36,8 +47,7 @@
   color: white;
   text-align: center;
   cursor: pointer;
-  margin: 50px 33px;
-
+  margin: 15px;
 }
 
 #burguer:hover {
@@ -85,10 +95,11 @@
 }
 
 .h1-header {
-  margin: 40px;
-  width: 60%;
-  text-align: center;
-  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .img-altura-largura {
@@ -373,22 +384,33 @@ h2 {
   font-weight: 400;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 626px) {
   /* ------------ Cabeçalho --------- */
 
-  .navbar {
+  .fundo-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0%;
+    width: 100%;
+    background: linear-gradient(#384f3b, #258d32);
+    color: white;
+}
+
+.navbar {
     display: block;
-    padding: 0px;
+    padding: 1px;
     margin: 0%;
     text-align: center;
     background: linear-gradient(to top, #384f3b, #258d32);
 }
+
 #menu {
     display: none;
     position: absolute;
     right: 0;
     background: linear-gradient(to top, #384F3B, #258d32);
-    width: 100%;
+    width: 30%;
     z-index: 5;
 }
 
@@ -399,20 +421,28 @@ h2 {
     margin: 50px 33px;
 
 }
-.a-nav {
-    text-decoration: none;
-    color: rgb(19, 19, 19);
+
+#burguer:hover {
+    color: white;
+    opacity: 0.8;
+    transition: all 0.6;
+}
+
+#nav.active #menu {
+    display: block;
 }
 
 .button-nav {
+    color: white;
     background-color: #384F3B;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 20px;
-    padding: 9px;
+    padding: 10px;
     transition: 0.5s;
     font-size: 13px;
-    width: 480px;
-    margin-left: -5%;
+    width: 120px;
+    margin: 10px;
+    margin-left: -20%;
 }
 
 .button-nav:hover {
@@ -421,6 +451,30 @@ h2 {
     font-weight: bold;
     font-size: 10px;
     transition: .5s;
+}
+.a-nav {
+    text-decoration: none;
+    color: rgb(19, 19, 19);
+}
+.a-nav:hover {
+    background-color: transparent;
+    transition: 1s;
+}
+
+.list-a {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.h1-header {
+    margin: 0px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.img-altura-largura {
+    width: 80px;
+    height: 80px;
 }
 
 .fundo-nav-img {
@@ -433,10 +487,8 @@ h2 {
     margin: 20px;
 }
 
-.h1-header {
-    width: 100%;
-    text-align: center;
-    font-size: 22px;
+.a-fundo-nav {
+    width: auto;
 }
 
   /* ------------ Main ------------ */
@@ -765,10 +817,10 @@ h2 {
 }
 .h1-header {
     margin-right: 5%;
-    margin-top: 5%;
+    margin-top: 0%;
     width: 90%;
     text-align: center;
-    font-size: 28px;
+    font-size: 26px;
 }
 
 
@@ -806,14 +858,6 @@ h2 {
   }
 
   /* --------- Footer ------------ */
-
-:root {
-  --color-neutral-0: #384F3B;
-  --color-neutral-10: #ffffff;
-  --color-neutral-20: #378241;
-  --color-neutral-30: #171717;
-  --color-neutral-40: #646262;
-}
 
 .input-group {
   display: flex;
@@ -1054,6 +1098,12 @@ h2 {
     color: white;
     text-align: center;
 }
+
+.fa-user {
+    padding: 0px 40px 0px 0px;
+    font-size: 36px;
+}
+
 #menu {
     display: inline;
     position: absolute;
@@ -1103,9 +1153,32 @@ h2 {
 .h1-header {
     width: 80%;
     text-align: center;
-    font-size: 36px;
-    margin: 5%;
-    margin-right: 10%;
+    font-size: 30px;
+}
+
+button {
+    background-color: #384F3B;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 10px;
+    transition: 0.5s;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #384F3B;
+    font-weight: bold;
+    font-size: 10px;
+    transition: .5s;
+}
+
+.list-a{
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 15px;
 }
 
 button {
