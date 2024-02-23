@@ -23,7 +23,7 @@ body {
 
 .wallpaper-card {
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -33,7 +33,7 @@ body {
 .card-box1 {
     position: relative;
     width: 250px;
-    height: 50vh;
+    height: 60vh;
     backdrop-filter: blur(25px);
     border: 2px solid var(--green-color-second);
     border-radius: 15px;
@@ -99,24 +99,111 @@ img {
 
 /* Responsividade */
 
-@media screen and (max-width: 320px) {
+/* Desktop */
+@media screen and (min-width: 1200px) {
+    .wallpaper-card {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .card-box1 {
+        height: 55vh;
+    }
+}
+/* Tablets */
+@media screen and (min-width: 769px) and (max-width: 834px) {
+    .wallpaper-card {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .card-box1 {
+        height: 50vh;
+    }
+}
+
+@media screen and (min-width: 565px) and (max-width: 768px) {
+    .wallpaper-card {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .card-box1 {
+        height: 50vh;
+    }
+}
+/* Mobiles */
+@media screen and (min-width: 361px) and (max-width: 564px) {
     .wallpaper-card {
         padding: 20px 110px;
+        height: 108vh;
         gap: 30px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
 
     .card-box1 {
-        min-height: 70vh;
+        height: 48vh;
+    }
+
+    .card-box1 img {
+        width: 40%;
+        padding: 10px;
     }
 }
 
-@media screen and (max-width: 564px) {
+@media screen and (min-width: 321px) and (max-width: 360px) {
     .wallpaper-card {
         padding: 20px 110px;
+        height: 130vh;
         gap: 30px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card-box1 {
+        min-height: 40vh;
+    }
+
+    .card-box1 img {
+        position: absolute;
+        left: 31%;
+        bottom: 25%;
+        padding: 10px;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .wallpaper-card {
+        padding: 20px 110px;
+        height: 150vh;
+        gap: 30px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card-box1 {
+        min-height: 65vh;
+    }
+
+    .card-box1 img {
+        position: absolute;
+        left: 32%;
+        bottom: 25%;
+        padding: 10px;
+        width: 36%;
     }
 }
