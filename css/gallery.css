@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
 /* Celulares X-Smalls */
 * {
   font-family: Arial, Helvetica, sans-serif;
@@ -108,7 +110,8 @@
   align-items: center;
   justify-content: center;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 400;
+  font-family: 'Madimi One';
 }
 
 .img-altura-largura {
@@ -242,7 +245,7 @@
 }
 
 .reserved h1 {
-  font-size: 24px;
+  font-size: 18px;
 }
 
 @media screen and (min-width: 626px) {
@@ -330,7 +333,7 @@
 .h1-header {
     margin: 0px;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .img-altura-largura {
@@ -438,7 +441,7 @@
 @media screen and (min-width: 768px) {
   /* ----------- Cabeçalho ---------- */
 
-  .fundo-nav {
+.fundo-nav {
     display: flex;
     margin: 0%;
     background: linear-gradient(to bottom, #384F3B, rgb(53, 141, 50));
@@ -446,14 +449,13 @@
     text-align: center;
 }
 .button-nav {
-    background-color: #384F3B;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 20px;
-    padding: 9px;
-    transition: 0.5s;
-    font-size: 13px;
-    width: 480px;
-    margin-left: -5%;
+  background-color: #384F3B;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 9px;
+  transition: 0.5s;
+  font-size: 13px;
+  width: 120px;
 }
 
 .button-nav:hover {
@@ -497,14 +499,13 @@
     transition: 1s;
 }
 .h1-header {
+    font-weight: 400;
     margin-right: 5%;
     margin-top: 0%;
     width: 90%;
     text-align: center;
     font-size: 26px;
 }
-
-
 
   /* ------------ Main ------------ */
 
@@ -659,6 +660,7 @@
 }
 
 .h1-header {
+    font-weight: 400;
     width: 80%;
     text-align: center;
     font-size: 30px;
@@ -848,6 +850,7 @@ button:hover {
 }
 
 .h1-header {
+    font-weight: 400;
     width: 80%;
     text-align: center;
     font-size: 36px;
@@ -1027,6 +1030,7 @@ button:hover {
 }
 
 .h1-header {
+    font-weight: 400;
     width: 80%;
     text-align: center;
     font-size: 36px;

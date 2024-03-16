@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
 /* Celulares X-Smalls */
 * {
     font-family: Arial, Helvetica, sans-serif;
@@ -106,7 +108,8 @@
     align-items: center;
     justify-content: center;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
+    font-family: 'Madimi One';
 }
 
 .img-altura-largura {
@@ -145,7 +148,7 @@ body {
    padding: 6%;
    border-radius: 24px;
    border: none;
-   width: 340px;
+   width: 280px;
    color: var(--color-neutral-0);
    font-weight: 700;
    transition: .4s;
@@ -155,7 +158,7 @@ body {
     background-color: var(--color-neutral-20);
     color: var(--color-neutral-10);
     font-weight: 700;
-    box-shadow: 0px 0px 5px 5px var(--color-neutral-30);
+    box-shadow: 0px 0px 5px 5px var(--color-neutral-10);
 }
 
 .cor-ramo{
@@ -209,7 +212,8 @@ body {
    padding: 5%;
    margin-top: 5%;
    border-radius: 30px;
-   }
+   font-size: 14px;
+}
 
 .apontar{
     cursor: pointer;
@@ -228,6 +232,10 @@ body {
     font-size: 25px;
     margin-top: 7%;
     margin-bottom: 5%;
+}
+
+.h2-header {
+    font-size: 24px;
 }
 
 /* ------------ Footer ------------ */
@@ -314,7 +322,7 @@ body {
 }
 
 .reserved h1 {
-    font-size: 24px;
+    font-size: 18px;
 }
 
 
@@ -404,7 +412,7 @@ body {
     .h1-header {
         margin: 0px;
         font-size: 20px;
-        font-weight: 700;
+        font-weight: 400;
     }
 
     .img-altura-largura {
@@ -428,69 +436,70 @@ body {
 
     /* ------------ Main ------------ */
 
-    .button-content {
-        display: flex;
-        justify-content: center;
-        padding: 3%;
-    }
+.button-content {
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+}
     
-    .cadbutton {
-       padding: 6%;
-       border-radius: 24px;
-       border: none;
-       width: 340px;
-       color: var(--color-neutral-0);
-       font-weight: 700;
-       transition: .4s;
-    }
+.cadbutton {
+    padding: 6%;
+    border-radius: 24px;
+    border: none;
+    width: 340px;
+    color: var(--color-neutral-0);
+    font-weight: 700;
+    transition: .4s;
+}
     
-    .cadbutton:hover {
-        background-color: var(--color-neutral-20);
-        color: var(--color-neutral-10);
-        font-weight: 700;
-        box-shadow: 0px 0px 5px 5px var(--color-neutral-30);
-    }
+.cadbutton:hover {
+    background-color: var(--color-neutral-20);
+    color: var(--color-neutral-10);
+    font-weight: 700;
+    box-shadow: 0px 0px 5px 5px var(--color-neutral-10);
+}
 
-    .divramos{
-        display: inline-block;
-        width: 52%;
-        text-align: center;
-        padding: 0px;
-        justify-content: center;
-        color: black;
-   }
+.divramos{
+    display: inline-block;
+    width: 52%;
+    text-align: center;
+    padding: 0px;
+    justify-content: center;
+     color: black;
+}
    
-   .divramos2{
-       display: inline-block;
-       width: 45%;
-       text-align: center;
-       margin: 0px;
-       padding: 0px;
-       justify-content: center;
-       color: black;
-   }
+.divramos2{
+    display: inline-block;
+    width: 45%;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    color: black;
+}
        
-   .divtexto{
-       display: inline-block;
-       width: 80%;
-       background-color: #384F3B;
-       color:white;
-       padding: 1%;
-       margin-top: 25px;
-       margin-bottom: 25px;
-       border-radius: 30px;
-       }
+.divtexto{
+    display: inline-block;
+    width: 80%;
+    background-color: #384F3B;
+    color:white;
+    padding: 5%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 30px;
+}
 
-       .tamanho{
-        width: 160px;
-        height: 160px;
-    }
+.tamanho{
+    width: 160px;
+    height: 160px;
+}
      
 .apontar{
         cursor: pointer;
         margin-top: 50px;
         margin-bottom: 50px;
     }
+
 .esp{
     margin-bottom: 10px;
 }
@@ -499,8 +508,11 @@ body {
     display: flex;
     width: 100%;
     justify-content: center;
-    font-size: 25px;
     margin-top: 3%;
+}
+
+.h2-header {
+    font-size: 24px;
 }
 
      /* ------------ Footer ------------ */
@@ -555,7 +567,7 @@ body {
 @media screen and (min-width: 768px) {
    /* ------------ Cabeçalho ------------ */
 
-   .fundo-nav {
+.fundo-nav {
     display: flex;
     margin: 0%;
     background: linear-gradient(to bottom, #384F3B, rgb(53, 141, 50));
@@ -569,8 +581,7 @@ body {
     padding: 9px;
     transition: 0.5s;
     font-size: 13px;
-    width: 480px;
-    margin-left: -5%;
+    width: 120px;
 }
 
 .button-nav:hover {
@@ -617,6 +628,7 @@ body {
     margin-right: 5%;
     margin-top: 0%;
     width: 90%;
+    font-weight: 400;
     text-align: center;
     font-size: 26px;
 }
@@ -643,7 +655,7 @@ body {
     background-color: var(--color-neutral-20);
     color: var(--color-neutral-10);
     font-weight: 700;
-    box-shadow: 0px 0px 5px 5px var(--color-neutral-30);
+    box-shadow: 0px 0px 5px 5px var(--color-neutral-10);
 }
 
 .divramos{
@@ -674,13 +686,18 @@ body {
     text-align: justify;
     background-color: #384F3B;
     color:white;
+    padding: 5%;
     margin-bottom: 25px;
     margin-top: 25px;
-
+    font-size: 16px;
 }
 .apontar{
     cursor: pointer;
     margin-top: 10px;
+}
+
+.h2-header {
+    font-size: 26px;
 }
 
 .h1-ramos{
@@ -766,6 +783,7 @@ body {
 }
 
 #menu {
+    margin: 0;
     display: inline;
     position: absolute;
     right: 0;
@@ -813,8 +831,17 @@ body {
 
 .h1-header {
     width: 80%;
+    font-weight: 400;
     text-align: center;
     font-size: 30px;
+}
+
+.list-a{
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 15px;
 }
 
 .list-a{
@@ -835,9 +862,9 @@ body {
 
 .cadbutton {
    padding: 6%;
-   border-radius: 24px;
+   border-radius: 26px;
    border: none;
-   width: 340px;
+   width: 420px;
    color: var(--color-neutral-0);
    font-weight: 700;
    transition: .4s;
@@ -847,7 +874,7 @@ body {
     background-color: var(--color-neutral-20);
     color: var(--color-neutral-10);
     font-weight: 700;
-    box-shadow: 0px 0px 5px 5px var(--color-neutral-30);
+    box-shadow: 0px 0px 5px 5px var(--color-neutral-10);
 }
 
 .divramos{
@@ -871,11 +898,13 @@ body {
 .divtexto{
     display: inline-block;
     width: 80%;
+    font-size: 18px;
+    padding: 5%;
     margin-top: 25px;
     margin-bottom: 25px;
     text-align: justify;
     background-color: #384F3B;
-    color:white
+    color:white;
 }
 .tamanho{
     width: 160px;
@@ -887,10 +916,13 @@ body {
     margin-top: 10px;
 }
 
+.h2-header {
+    font-size: 26px;
+}
+
 .h1-ramos{
     display: flex;
     width: 100%;
-    margin-left: 1%;
     justify-content: center;
     font-size: 25px;
     margin-top: 12%;
@@ -1014,6 +1046,7 @@ body {
 .h1-header {
     width: 80%;
     text-align: center;
+    font-weight: 400;
     font-size: 36px;
     margin: 5%;
     margin-right: 10%;
@@ -1038,9 +1071,9 @@ body {
 
 .cadbutton {
    padding: 6%;
-   border-radius: 24px;
+   border-radius: 32px;
    border: none;
-   width: 340px;
+   width: 520px;
    color: var(--color-neutral-0);
    font-weight: 700;
    transition: .4s;
@@ -1050,7 +1083,7 @@ body {
     background-color: var(--color-neutral-20);
     color: var(--color-neutral-10);
     font-weight: 700;
-    box-shadow: 0px 0px 5px 5px var(--color-neutral-30);
+    box-shadow: 0px 0px 5px 5px var(--color-neutral-10);
 }
 
 .divramos{
@@ -1078,7 +1111,9 @@ body {
     margin-bottom: 25px;
     text-align: justify;
     background-color: #384F3B;
-    color:white
+    color:white;
+    padding: 5%;
+    font-size: 20px;
 }
 .tamanho{
     width: 160px;
@@ -1088,6 +1123,10 @@ body {
 .apontar{
     cursor: pointer;
     margin-top: 10px;
+}
+
+.h2-header {
+    font-size: 28px;
 }
 
 .h1-ramos{
@@ -1232,6 +1271,7 @@ body {
 .h1-header {
     width: 80%;
     text-align: center;
+    font-weight: 400;
     font-size: 36px;
     margin: 5%;
     margin-right: 10%;
@@ -1255,9 +1295,9 @@ body {
 
 .cadbutton {
    padding: 6%;
-   border-radius: 24px;
+   border-radius: 36px;
    border: none;
-   width: 340px;
+   width: 540px;
    color: var(--color-neutral-0);
    font-weight: 700;
    transition: .4s;
@@ -1267,7 +1307,7 @@ body {
     background-color: var(--color-neutral-20);
     color: var(--color-neutral-10);
     font-weight: 700;
-    box-shadow: 0px 0px 5px 5px var(--color-neutral-30);
+    box-shadow: 0px 0px 5px 5px var(--color-neutral-10);
 }
 
 .divramos{
@@ -1295,7 +1335,9 @@ body {
     margin-bottom: 25px;
     text-align: justify;
     background-color: #384F3B;
-    color:white
+    color:white;
+    padding: 5%;
+    font-size: 22px;
 }
 .tamanho{
     width: 160px;
@@ -1305,6 +1347,10 @@ body {
 .apontar{
     cursor: pointer;
     margin-top: 10px;
+}
+
+.h2-header {
+    font-size: 28px;
 }
 
 
