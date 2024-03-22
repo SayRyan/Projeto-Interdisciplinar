@@ -1,0 +1,84 @@
+:root {
+    --primary-color: #c6c3c3;
+    --second-color: #ffffff;
+    --black-color: #000000;
+    --green-color-primary: #384F3B;
+    --green-color-second: #378241;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    position: relative;
+}
+
+@keyframes wallpaper {
+    0% {
+        font-size: 16px;
+    }
+
+    50% {
+        font-size: 32px;
+    }
+
+    100% {
+        font-size: 42px;
+    }
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background-color: white;
+    position: relative;
+}
+
+.swiper-slide h2 {
+    position: absolute;
+    color: white;
+    z-index: 10;
+    left: 50%;
+    top: calc(50% - 36px);
+    animation-name: wallpaper;
+    animation-duration: 1s;
+    font-size: 42px;
+    transform: translate(-50%, -50%);
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-radius: 100%;
+    background-color: var(--second-color);
+    opacity: .2;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+}

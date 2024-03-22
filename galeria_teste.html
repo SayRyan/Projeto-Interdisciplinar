@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="galeriafake.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./imagens/master.00_03_36_20.Quadro001.jpg" alt="">
+                <h2>Imagem 1</h2>
+            </div>
+            <div class="swiper-slide">
+                <img src="./imagens/master.00_08_30_05.Quadro009.jpg" alt="">
+                <h2>Imagem 2</h2>
+            </div>
+            <div class="swiper-slide">
+                <img src="./imagens/master.00_09_24_26.Quadro015.jpg" alt="">
+                <h2>Imagem 3</h2>
+            </div>
+            <div class="swiper-slide">
+                <img src="./imagens/master.00_14_10_25.Quadro031.jpg" alt="">
+                <h2>Imagem 4</h2>
+            </div>
+            <div class="swiper-slide">
+                <img src="./imagens/master.00_19_00_19.Quadro050.jpg" alt="">
+                <h2>Imagem 5</h2>
+            </div>
+            <div class="swiper-slide">
+                <img src="./imagens/master.00_08_54_28.Quadro011.jpg" alt="">
+                <h2>Imagem 6</h2>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper(".mySwiper", {
+            direction: "vertical",
+            slidesPerView: 1,
+            spaceBetween: 0,
+            mousewheel: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+</html>
